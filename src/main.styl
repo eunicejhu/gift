@@ -1,0 +1,95 @@
+@import "yeticss";
+/*@font-face {
+    font-family: "Chalkduster";
+    src: url(./assets/fonts/Chalkduster/Chalkduster.ttf) format("truetype"); 
+}*/
+body 
+  background-size: cover;
+  position relative
+  
+  
+#header-illustration
+  position: absolute;
+  right: 0;
+  width: 40vw;
+  height: auto;
+
+main
+  padding 140px 0
+  text-align center
+  h1
+    margin-bottom: 60px
+  .button
+    background-image: linear-gradient(90deg, #AB88F2 0%, #6F4FC9 100%);
+    font-size: 26px;
+    color: #FFFFFF;
+    padding: 60px;
+    border-radius: 0;
+  .landing-illustration 
+    margin: 120px 0 0;
+    @media screen and (max-width: 600px)
+      margin 100px 0 0;
+    svg
+      @media screen and (max-width: 600px)
+        width 80%
+
+  svg.background-curve
+    width: 100%;
+    height: 261px;
+    margin-top: -73px;
+    position: absolute;
+    left: 0;
+  
+  .features
+    width: 100%
+    position: absolute
+    margin-top: 188px
+    .feature
+      width: 100%
+      height: 430px
+      background-color: rgba(216, 216, 216, 0.2)
+      display: flex
+      justify-content: space-evenly
+      &:nth-child(2)
+        flex-direction: row-reverse
+      svg
+        @media screen and (max-width: 600px)
+          width: 80%
+      @media screen and (max-width: 900px) 
+        height: 530px
+        display: flex
+        flex-direction: column 
+        align-items: center
+        &:nth-child(2)
+          flex-direction: column
+      div
+        width 400px
+    .footer-background
+      background-color: rgba(216, 216, 216, 0.2)
+      position: relative
+      .text
+        position absolute
+        color: #FFFFFF
+        position: absolute;
+        bottom: 0px;
+        margin: 40px;
+      .purple
+        width: 100%;
+        height: 14px;
+        background-color: #5D2B7C;
+        margin-top: -8px;
+#anime-1,
+#anime-2,
+#anime-3
+  opacity 0
+
+@media screen and (min-width: 1200px) 
+  body
+    margin: 0 160px
+  #header-illustration
+    width: 30vw;
+
+
+
+
+  
