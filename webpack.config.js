@@ -17,14 +17,14 @@ const commonConfig = merge([
   {
     entry: "./src/index.js",
     output: {
-      filename: "[name].[hash].js"
-      // path: path.resolve(__dirname, "dist")
+      filename: "[name].[hash].js",
+      path: path.resolve(__dirname, "docs")
     },
     plugins: [
-      new CleanWebpackPlugin(["dist", "build"]),
+      new CleanWebpackPlugin(["docs", "build"]),
       new HtmlWebpackPlugin({
         title: "Webpack demo",
-        filename: path.resolve(__dirname, "dist/index.html"),
+        filename: path.resolve(__dirname, "docs/index.html"),
         template: path.resolve(__dirname, "src/assets/custom.html")
       }),
       new webpack.HotModuleReplacementPlugin(),

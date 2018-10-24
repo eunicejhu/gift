@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>
+    Webpack demo
+  </title>
+  <style>
+    /* @import url('https://fonts.googleapis.com/css?family=Parisienne|Roboto'); */
+  </style>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+<script type="text/javascript" src="runtime.9538aa010d57b710bc44.js"></script><script type="text/javascript" src="main.9538aa010d57b710bc44.js"></script></body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script> -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+  var commonTweenParams = {
+    opacity: 1,
+    transform: 'translateY(-30px)',
+    ease: Linear.easeNone
+  }
+  var anime_1_tween = TweenMax.to('#anime-1', 0.5, commonTweenParams);
+  var anime_1_scene = new ScrollMagic.Scene({
+    triggerElement: "#anime-1",
+  }).setTween(anime_1_tween)
+
+  var anime_2_tween = TweenMax.to('#anime-2', 0.5, commonTweenParams);
+  var anime_2_scene = new ScrollMagic.Scene({
+    triggerElement: "#anime-2",
+  }).setTween(anime_2_tween)
+
+  var anime_3_tween = TweenMax.to('#anime-3', 0.5, commonTweenParams);
+  var anime_3_scene = new ScrollMagic.Scene({
+    triggerElement: "#anime-3",
+  }).setTween(anime_3_tween)
+
+  // var pin_scene = new ScrollMagic.Scene({ triggerElement: "#trigger" }).setPin("#pin")
+
+  controller.addScene([
+    // pin_scene,
+    anime_1_scene,
+    anime_2_scene,
+    anime_3_scene
+
+  ]);
+
+</script>
+
+</html>
