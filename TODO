@@ -9,7 +9,7 @@ Todo:
   ✔ footer @started(18-10-22 11:00) @done(18-10-22 16:03) @lasted(5h3m5s)
   ✔ first loading animation(scrollMagic & gsap) @started(18-10-22 16:03) @done(18-10-23 12:12) @lasted(20h9m4s)
   ✔ responsive (mobile version) @started(18-10-23 12:19) @done(18-10-23 12:36) @lasted(17m9s)
-  ☐ deploy @started(18-10-23 15:52) (output, manifest, caching, minify, mode, devtool)
+  ✔ deploy (output, manifest, caching, minify, mode, devtool) @done(18-10-24 16:02)
   ☐ convert to react project
   ☐ react to pwa? (manifest, service worker)
   ☐ tools: svg for frequently used icon
