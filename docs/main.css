@@ -12,6 +12,11 @@ footer,header,main,section {
   display: block;
 }
 
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 [hidden] {
   display: none;
 }
@@ -65,6 +70,11 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 *,*:after,*:before {
   box-sizing: border-box;
 }
@@ -80,6 +90,11 @@ body {
   line-height: 1.5;
   color: #505658;
   text-rendering: optimizeSpeed;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 ::-moz-selection {
@@ -178,11 +193,19 @@ h6 {
   }
 }
 
+.container {
+  margin: 0 auto;
+}
+
 [class^="grid-flex-cell"],[class*=" grid-flex-cell"] {
   padding: 30px 0 0 30px;
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
   [class^="grid-flex-cell"],  [class*=" grid-flex-cell"] {
     flex: 0 0 100%;
   }
@@ -191,6 +214,18 @@ h6 {
 @media screen and (min-width: 601px) {
   [class^="grid-flex-cell"],  [class*=" grid-flex-cell"] {
     flex: 1;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .container {
+    width: 70%;
   }
 }
 
@@ -296,6 +331,22 @@ h6 {
   }
 }
 
+.progress {
+  border-radius: 3px;
+  line-height: 0;
+}
+
+.progress {
+  border: 1px solid #cdd3d5;
+  background-color: #fdfdfd;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
 @media print {
   * {
     background: transparent !important;
@@ -316,7 +367,7 @@ h6 {
     content: '';
   }
 
-  h2,  h3 {
+  p,  h2,  h3 {
     orphans: 3;
     widows: 3;
   }
